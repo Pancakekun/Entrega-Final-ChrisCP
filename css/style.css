@@ -168,8 +168,8 @@
 }
 .mapa{
   padding: 0px;
-  width: 80%;
-  height: auto;
+  height: 100%;
+  width: auto;
 }
 .titulo-horarios{
   font-size: 40px;
