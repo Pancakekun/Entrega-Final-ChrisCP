@@ -1,0 +1,343 @@
+@media only screen and (max-width: 300px) {
+  .navegacion{
+    font-size: 10vw;
+  }
+}
+*{
+  margin: 0px;
+}
+.grid-container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15% 1fr 1fr 1fr 1fr 5%;
+  gap: 0px 0px;
+  width: 100vw;
+  height: 100vh;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "menutop menutop menutop menutop menutop menutop"
+    "centro centro centro centro centro centro"
+    "centro centro centro centro centro centro"
+    "centro centro centro centro centro centro"
+    "centro centro centro centro centro centro"
+    "foot foot foot foot foot foot";
+}
+.navegacion{
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-area: menutop;
+  background-color: white;
+  grid-template-areas: "logo logo inicio visite voluntariado tienda";
+  font-family: 'Playfair Display', serif;
+  color: #39B54A;
+  border: solid black;
+  border-width: 1px;
+
+}
+.logo{
+  text-align: center;
+  grid-area: logo;
+  font-size: 40px;
+  padding-top: 30px;
+}
+.inicio{
+  grid-area: inicio;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 40px;
+}
+.inicioboton{
+    font-family: 'Playfair Display', serif;
+    color: #39B54A;
+    font-size: 25px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;   
+    cursor: pointer;
+}
+.visite{
+  grid-area: visite;
+  
+  text-align: center;
+  padding-top: 40px;
+}
+.linkhorarios{
+    font-family: 'Playfair Display', serif;
+    color: #39B54A;
+    font-size: 25px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;  
+    cursor: pointer; 
+}
+.voluntariado{
+  grid-area: voluntariado;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 40px;
+}
+.linkvoluntariado{
+    font-family: 'Playfair Display', serif;
+    color: #39B54A;
+    font-size: 25px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none; 
+    cursor: pointer;
+}
+.tienda{
+  grid-area: tienda;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 40px;
+}
+.linktienda{
+    font-family: 'Playfair Display', serif;
+    color: #39B54A;
+    font-size: 25px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none; 
+    cursor: pointer;
+}
+.cuerpo{
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "parrafo parrafo imagen imagen imagen imagen"
+                       "parrafo parrafo imagen imagen imagen imagen"
+                       "parrafo parrafo imagen imagen imagen imagen"
+                       "parrafo parrafo imagen imagen imagen imagen";
+  grid-area: centro;
+  background-color: white;
+}
+.parrafocentral{
+  font-family: 'Work Sans', sans-serif;
+  grid-area: parrafo;
+  text-align: left;
+  padding: 20%;
+  font-size: 20px;
+}
+.imagenbox{
+  grid-area: imagen;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.oso{
+  padding: 60px;
+  width: 80%;
+  height: auto;
+}
+.contactos{
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  display: grid;
+  grid-area: foot;
+  grid-template-columns: subgrid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: #E6E6E6;
+}
+.navegacion button:hover {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.cuerpo-horarios{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "parrafo1 parrafo1 imagen imagen imagen imagen"
+                       "parrafo1 parrafo1 imagen imagen imagen imagen"
+                       "parrafo2 parrafo2 imagen imagen imagen imagen"
+                       "parrafo2 parrafo2 imagen imagen imagen imagen";
+  grid-area: centro;
+  background-color: white;
+}
+.horarios-normales{
+  font-family: 'Work Sans', sans-serif;
+  padding: 80px;
+  grid-area: parrafo1;
+}
+.horarios-guiados{
+  font-family: 'Work Sans', sans-serif;
+  padding: 80px;
+  grid-area: parrafo2;
+}
+.mapa{
+  padding: 40px;
+  width: 80%;
+  height: auto;
+}
+.titulo-horarios{
+  font-size: 40px;
+}
+.cuerpo-voluntarios{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". titulo titulo titulo titulo ."
+                       "texto-r texto-r texto-r imagen imagen imagen"
+                       "texto-r texto-r texto-r imagen imagen imagen"
+                       "boton-f boton-f boton-f imagen imagen imagen";
+  grid-area: centro;
+  background-color: white;
+}
+
+.titulo-voluntariado{
+  padding-top: 3vh;
+  grid-area: titulo;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Work Sans', sans-serif;
+
+}
+.texto-r{
+  padding-left: 3vw;
+  grid-area: texto-r;
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Work Sans', sans-serif;
+}
+.pandarojo{
+  padding:20px ;
+  display: flex;
+  height: 80%;
+  overflow: hidden;
+}
+.boton-f{
+  grid-area: boton-f;
+  text-align: center;
+}
+.boton-formulario{
+  background-color: #009245;
+  color: white;
+  font-family: 'Alfa Slab One', cursive;
+  border-radius: 15px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.cuerpo-tienda{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". titulo-tienda titulo-tienda titulo-tienda . ."
+                       ". camisas peluches accesorios . ."
+                       ". imagen imagen imagen imagen ."
+                       ". imagen imagen imagen imagen .";
+  grid-area: centro;
+}
+.titulo-tienda{
+  grid-area: titulo-tienda;
+  font-size: 25px;
+  text-align: left;
+  padding-top: 40px;
+  font-family: 'Playfair Display', serif;
+  color: #39B54A;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.camisetas{
+  grid-area: camisas;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 40px;
+  font-family: 'Playfair Display', serif;
+  color: #39B54A;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.peluches{
+  grid-area: peluches;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 40px;
+  font-family: 'Playfair Display', serif;
+  color: #39B54A;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.accesorios{
+  grid-area: accesorios;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 40px;
+  font-family: 'Playfair Display', serif;
+  color: #39B54A;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.easywayout{
+  height: 100%;
+  overflow: hidden;
+  
+}
+.cuerpo-formulario{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "form form form gracias gracias ."
+                       "form form form gracias gracias ."
+                       "form form form imagen imagen ."
+                       ". . . imagen imagen .";
+  grid-area: centro;
+  background-color: white;
+}
+.texto-gracias{
+  display: flex;
+  padding: 50px;
+  grid-area: gracias;
+  text-align: left;
+  font-size: 25px;
+  font-family: 'Work Sans', sans-serif;
+}
+.pajaro{
+
+  height: 100%;
+}
+.formulario{
+  grid-area: form;
+  padding: 80px;
+}
+.formulario * {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+.form-boxes{
+  display: flex;
+  flex-direction: column;
+}
+.form-boxes > * {
+  align-self: flex-start;
+}
+.form-label{
+  padding: 10px 0;
+  font-size: 25px;
+  font-family: 'Work Sans', sans-serif
+
+}
+.form-input{
+  -webkit-appearance: none;
+
+  width: 100%;
+  max-width: 425px;
+  outline: none;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  background: #f9f9f9;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+.form-input:focus {
+  background: #ffffff;
+}
+.boton-enviar{
+  margin-top: 30px;
+   background-color: #009245;
+  color: white;
+  font-family: 'Alfa Slab One', cursive;
+  border-radius: 15px;
+  font-size: 40px;
+  cursor: pointer;
+}
